@@ -97,17 +97,17 @@ const Home = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-foreground mb-6">
-                Meet Dr. Sarah Johnson
+                Meet Anne Mburu
               </h2>
               <p className="text-lg text-muted-foreground mb-6">
-                With over 15 years of experience in mental health counseling, Dr. Johnson 
+                With over 9 years of experience in mental health counseling, Anne 
                 is dedicated to helping individuals and families find their path to healing 
                 and personal growth.
               </p>
               <ul className="space-y-4 mb-8">
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-healing-blue rounded-full" />
-                  <span className="text-foreground">Licensed Clinical Psychologist</span>
+                  <span className="text-foreground">Licensed Counseling Psychologist</span>
                 </li>
                 <li className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-healing-green rounded-full" />
@@ -119,7 +119,7 @@ const Home = () => {
                 </li>
               </ul>
               <Button variant="healing" size="lg" asChild>
-                <Link to="/about">Learn More About Dr. Johnson</Link>
+                <Link to="/about">Learn More About Anne</Link>
               </Button>
             </div>
             <div className="relative">

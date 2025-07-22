@@ -1,7 +1,20 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import { Link } from "react-router-dom";
-import { Award, BookOpen, Heart, Users, Shield, CheckCircle } from "lucide-react";
+import {
+  Award,
+  BookOpen,
+  Heart,
+  Users,
+  Shield,
+  CheckCircle,
+} from "lucide-react";
 import therapistImage from "@/assets/therapist-portrait.jpg";
 import meditationImage from "@/assets/meditation-garden.jpg";
 
@@ -16,8 +29,9 @@ const About = () => {
               About Dr. Sarah Johnson
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-slide-in-left">
-              Dedicated to helping individuals and families find their path to healing, 
-              growth, and lasting well-being through compassionate, evidence-based therapy.
+              Dedicated to helping individuals and families find their path to
+              healing, growth, and lasting well-being through compassionate,
+              evidence-based therapy.
             </p>
           </div>
 
@@ -34,15 +48,21 @@ const About = () => {
                 Your Partner in Mental Health
               </h2>
               <p className="text-lg text-muted-foreground">
-                With over 15 years of experience in mental health counseling, Dr. Sarah Johnson 
-                brings a unique blend of clinical expertise and genuine compassion to every session. 
-                She believes that everyone deserves to live a fulfilling life free from the burden 
-                of mental health challenges.
+                Anne is a licensed Counseling Psychologist with over 9
+                years of experience supporting individuals, couples, families,
+                and teams. She offers compassionate, confidential therapy rooted
+                in evidence-based practices, tailored to your unique needs. Anne
+                specializes in anxiety, trauma, grief, addiction, relationship
+                challenges, and workplace stress.
               </p>
               <p className="text-lg text-muted-foreground">
-                Dr. Johnson's approach is rooted in evidence-based practices, with a focus on 
-                creating a safe, non-judgmental space where clients can explore their thoughts, 
-                feelings, and behaviors without fear of criticism.
+                Her experience spans humanitarian work, corporate wellness,
+                schools, faith-based settings, and private practice. She creates
+                a safe, non-judgmental space where clients can explore thoughts,
+                emotions, and behaviors freely. Sessions are available both
+                in-person and online for clients in Kenya and internationally.
+                Whether you're feeling stuck or ready for change, Anne is here
+                to walk with you on your journey.
               </p>
               <Button variant="healing" size="lg" asChild>
                 <Link to="/contact">Schedule a Consultation</Link>
@@ -60,7 +80,8 @@ const About = () => {
               Credentials & Education
             </h2>
             <p className="text-lg text-muted-foreground">
-              Extensive training and continuous education in mental health practices
+              Extensive training and continuous education in mental health
+              practices
             </p>
           </div>
 
@@ -70,42 +91,47 @@ const About = () => {
                 icon: Award,
                 title: "Ph.D. in Clinical Psychology",
                 description: "Stanford University, 2008",
-                color: "text-healing-blue"
+                color: "text-healing-blue",
               },
               {
                 icon: BookOpen,
                 title: "Licensed Clinical Psychologist",
                 description: "California Board of Psychology, License #12345",
-                color: "text-healing-green"
+                color: "text-healing-green",
               },
               {
                 icon: Heart,
                 title: "Certified CBT Therapist",
                 description: "Beck Institute for Cognitive Behavior Therapy",
-                color: "text-primary"
+                color: "text-primary",
               },
               {
                 icon: Users,
                 title: "EMDR Certified",
                 description: "EMDR International Association",
-                color: "text-healing-blue"
+                color: "text-healing-blue",
               },
               {
                 icon: Shield,
                 title: "Trauma-Informed Care",
                 description: "National Council for Mental Wellbeing",
-                color: "text-healing-green"
+                color: "text-healing-green",
               },
               {
                 icon: CheckCircle,
                 title: "Mindfulness-Based Therapy",
                 description: "Mindfulness-Based Stress Reduction (MBSR)",
-                color: "text-primary"
-              }
+                color: "text-primary",
+              },
             ].map((credential, index) => (
-              <Card key={index} className="border-0 shadow-card hover:shadow-hover transition-all duration-300 hover:scale-105">
+              <Card
+                key={index}
+                className="border-0 shadow-card hover:shadow-hover transition-all duration-300 hover:scale-105"
+              >
                 <CardHeader className="text-center pb-4">
-                  <credential.icon className={`w-12 h-12 ${credential.color} mx-auto mb-4`} />
+                  <credential.icon
+                    className={`w-12 h-12 ${credential.color} mx-auto mb-4`}
+                  />
                   <CardTitle className="text-lg">{credential.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -127,13 +153,16 @@ const About = () => {
               Areas of Specialization
             </h2>
             <p className="text-lg text-muted-foreground">
-              Comprehensive treatment for a wide range of mental health conditions
+              Comprehensive treatment for a wide range of mental health
+              conditions
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-foreground">Individual Therapy</h3>
+              <h3 className="text-2xl font-bold text-foreground">
+                Individual Therapy
+              </h3>
               <ul className="space-y-3">
                 {[
                   "Anxiety and Panic Disorders",
@@ -143,7 +172,7 @@ const About = () => {
                   "Life Transitions",
                   "Self-Esteem and Confidence",
                   "Stress Management",
-                  "Relationship Issues"
+                  "Relationship Issues",
                 ].map((item, index) => (
                   <li key={index} className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-healing-blue rounded-full" />
@@ -154,7 +183,9 @@ const About = () => {
             </div>
 
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-foreground">Couples & Family Therapy</h3>
+              <h3 className="text-2xl font-bold text-foreground">
+                Couples & Family Therapy
+              </h3>
               <ul className="space-y-3">
                 {[
                   "Communication Problems",
@@ -164,7 +195,7 @@ const About = () => {
                   "Parenting Challenges",
                   "Blended Family Issues",
                   "Divorce Mediation",
-                  "Teen and Adolescent Issues"
+                  "Teen and Adolescent Issues",
                 ].map((item, index) => (
                   <li key={index} className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-healing-green rounded-full" />
@@ -187,19 +218,21 @@ const About = () => {
               </h2>
               <div className="space-y-6 text-lg text-muted-foreground">
                 <p>
-                  I believe that every person has the innate capacity for healing and growth. 
-                  My role is to provide a safe, supportive environment where you can explore 
-                  your inner world and develop the tools you need to create positive change.
+                  I believe that every person has the innate capacity for
+                  healing and growth. My role is to provide a safe, supportive
+                  environment where you can explore your inner world and develop
+                  the tools you need to create positive change.
                 </p>
                 <p>
-                  Using an integrative approach that combines evidence-based techniques with 
-                  compassionate understanding, I work collaboratively with clients to address 
-                  their unique needs and goals.
+                  Using an integrative approach that combines evidence-based
+                  techniques with compassionate understanding, I work
+                  collaboratively with clients to address their unique needs and
+                  goals.
                 </p>
                 <p>
-                  Whether you're dealing with anxiety, depression, relationship challenges, 
-                  or life transitions, I'm here to walk alongside you on your journey toward 
-                  greater well-being and fulfillment.
+                  Whether you're dealing with anxiety, depression, relationship
+                  challenges, or life transitions, I'm here to walk alongside
+                  you on your journey toward greater well-being and fulfillment.
                 </p>
               </div>
               <div className="mt-8">
@@ -222,9 +255,12 @@ const About = () => {
       {/* Call to Action */}
       <section className="py-20 bg-gradient-to-r from-healing-blue to-healing-green text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Start Your Journey?</h2>
+          <h2 className="text-4xl font-bold mb-6">
+            Ready to Start Your Journey?
+          </h2>
           <p className="text-xl mb-8 text-white/90">
-            Take the first step towards better mental health. Book a consultation today.
+            Take the first step towards better mental health. Book a
+            consultation today.
           </p>
           <Button variant="calm" size="lg" asChild>
             <Link to="/contact">Schedule Consultation</Link>
