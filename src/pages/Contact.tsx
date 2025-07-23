@@ -184,14 +184,14 @@ const Contact = () => {
                     <Phone className="w-5 h-5 text-healing-blue" />
                     <div>
                       <h3 className="font-semibold text-foreground">Phone</h3>
-                      <p className="text-muted-foreground">(555) 123-4567</p>
+                      <p className="text-muted-foreground">+254 792427737</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 text-healing-blue" />
                     <div>
                       <h3 className="font-semibold text-foreground">Email</h3>
-                      <p className="text-muted-foreground">info@healingmind.com</p>
+                      <p className="text-muted-foreground">mburuanne19@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
@@ -199,9 +199,8 @@ const Contact = () => {
                     <div>
                       <h3 className="font-semibold text-foreground">Address</h3>
                       <p className="text-muted-foreground">
-                        123 Wellness Street<br />
-                        Suite 200<br />
-                        San Francisco, CA 94105
+                        <br />
+                        Nairobi, Kenya
                       </p>
                     </div>
                   </div>
@@ -248,15 +247,15 @@ const Contact = () => {
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center space-x-2">
                       <CheckCircle className="w-4 h-4 text-healing-green" />
-                      <span>Crisis Hotline: 988 (Suicide & Crisis Lifeline)</span>
+                      <span>Crisis Hotline: +254 739 935 333  (Suicide & Crisis Lifeline)</span>
                     </li>
                     <li className="flex items-center space-x-2">
                       <CheckCircle className="w-4 h-4 text-healing-green" />
-                      <span>Emergency Services: 911</span>
+                      <span>Emergency Services: 999</span>
                     </li>
                     <li className="flex items-center space-x-2">
                       <CheckCircle className="w-4 h-4 text-healing-green" />
-                      <span>Text Crisis Line: Text HOME to 741741</span>
+                      <span>Text Crisis Line: Text HOME to  741741</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -326,7 +325,7 @@ const Contact = () => {
             Reach out now to schedule your consultation.
           </p>
           <Button variant="calm" size="lg">
-            Call (555) 123-4567
+            Call +254 792427737
           </Button>
         </div>
       </section>

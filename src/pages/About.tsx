@@ -26,7 +26,7 @@ const About = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h1 className="text-5xl font-bold text-foreground mb-6 animate-fade-in">
-              About Dr. Sarah Johnson
+              About Anne
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-slide-in-left">
               Dedicated to helping individuals and families find their path to
@@ -89,8 +89,8 @@ const About = () => {
             {[
               {
                 icon: Award,
-                title: "Ph.D. in Clinical Psychology",
-                description: "Stanford University, 2008",
+                title: "Degree in Clinical Psychology",
+                description: "Kenyatta University, 2008",
                 color: "text-healing-blue",
               },
               {
