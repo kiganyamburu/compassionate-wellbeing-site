@@ -155,7 +155,7 @@ const Testimonials = () => {
               Video Testimonials
             </h2>
             <p className="text-lg text-muted-foreground">
-              Hear directly from our clients about their transformative experiences
+              Hear directly from my clients about their transformative experiences
             </p>
           </div>
 
