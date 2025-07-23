@@ -280,28 +280,28 @@ const Contact = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {[
               {
-                question: "How do I know if therapy is right for me?",
-                answer: "If you're struggling with mental health concerns, relationship issues, or life transitions, therapy can be beneficial. Our initial consultation helps determine if we're a good fit."
+                question: "How do I book a session?",
+                answer: "Booking a session is simple. You can reach out to me directly via email or WhatsApp, or use the Book a Session button on this site to schedule a convenient time. I offer both in-person and virtual sessions."
               },
               {
-                question: "What should I expect in the first session?",
-                answer: "The first session is an assessment where we'll discuss your concerns, goals, and medical history. We'll also explain our approach and develop a treatment plan together."
+                question: "How long is each session?",
+                answer: "Each therapy session lasts approximately 50 minutes. For couples, families, or corporate sessions, extended time may be arranged based on your needs."
               },
               {
-                question: "Do you accept insurance?",
-                answer: "Yes, we accept most major insurance plans. We also offer sliding scale fees for those experiencing financial hardship."
+                question: "What is the cost per session?",
+                answer: "Session fees vary depending on the type of service (individual, couple, family, or organizational). Please get in touch for the current rate card. I strive to keep my services accessible and may offer sliding scale options in certain cases."
               },
               {
-                question: "How long does therapy typically last?",
-                answer: "The duration varies depending on your needs and goals. Some clients benefit from short-term therapy (8-12 sessions), while others prefer longer-term support."
+                question: "Do you offer virtual therapy?",
+                answer: "Yes, I offer secure and confidential online therapy sessions via Zoom or Google Meet for clients within Kenya and abroad. This provides flexibility and comfort from your own space."
               },
               {
-                question: "Are sessions confidential?",
-                answer: "Yes, all sessions are strictly confidential. We only share information with your written consent or in cases where there's a legal obligation to protect safety."
+                question: "Is counseling confidential?",
+                answer: "Absolutely. Everything shared in session is treated with strict confidentiality, in line with professional ethical standards. Exceptions apply only in cases where there is a risk of harm to yourself or others, as guided by law and ethical guidelines."
               },
               {
-                question: "Can I switch therapists if needed?",
-                answer: "Absolutely. The therapeutic relationship is crucial for success. If you feel we're not a good fit, we'll help you find another therapist who better meets your needs."
+                question: "What if I’m not sure therapy is for me?",
+                answer: "That’s completely okay — many people feel that way at first. I offer a free 15-minute discovery call where we can talk about your concerns and see if therapy is the right fit for you. There’s no pressure, just support."
               }
             ].map((faq, index) => (
               <Card key={index} className="border-0 shadow-card">
