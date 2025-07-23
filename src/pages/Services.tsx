@@ -9,7 +9,7 @@ const Services = () => {
       icon: Heart,
       title: "Individual Therapy",
       description: "One-on-one sessions tailored to your specific needs and goals",
-      price: "$150 per session",
+      // price: "$150 per session",
       duration: "50 minutes",
       features: [
         "Personalized treatment plans",
@@ -22,7 +22,7 @@ const Services = () => {
       icon: Users,
       title: "Couples Therapy",
       description: "Strengthen your relationship through guided communication",
-      price: "$200 per session",
+      // price: "$200 per session",
       duration: "60 minutes",
       features: [
         "Improved communication",
@@ -35,7 +35,7 @@ const Services = () => {
       icon: Home,
       title: "Family Counseling",
       description: "Build stronger family bonds and resolve conflicts",
-      price: "$180 per session",
+      // price: "$180 per session",
       duration: "60 minutes",
       features: [
         "Family dynamics improvement",
@@ -48,7 +48,7 @@ const Services = () => {
       icon: Brain,
       title: "Cognitive Behavioral Therapy",
       description: "Change negative thought patterns and behaviors",
-      price: "$150 per session",
+      // price: "$150 per session",
       duration: "50 minutes",
       features: [
         "Thought restructuring",
@@ -61,7 +61,7 @@ const Services = () => {
       icon: Shield,
       title: "Trauma Therapy",
       description: "Specialized treatment for trauma and PTSD",
-      price: "$160 per session",
+      // price: "$160 per session",
       duration: "50 minutes",
       features: [
         "EMDR therapy",
@@ -74,7 +74,7 @@ const Services = () => {
       icon: Clock,
       title: "Crisis Intervention",
       description: "Immediate support during mental health crises",
-      price: "$200 per session",
+      // price: "$200 per session",
       duration: "Variable",
       features: [
         "24/7 availability",
