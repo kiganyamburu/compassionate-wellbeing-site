@@ -165,8 +165,8 @@ const Services = () => {
                 description: "Teaches skills for managing emotions and improving relationships."
               },
               {
-                title: "Eye Movement Desensitization (EMDR)",
-                description: "Effective treatment for trauma and PTSD using bilateral stimulation."
+                title: "Psychoeducation & Supportive Counseling",
+                description: "Provides clients with information about their mental health conditions and teaches coping strategies."
               },
               {
                 title: "Mindfulness-Based Therapy",
@@ -208,28 +208,27 @@ const Services = () => {
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-healing-green mt-0.5" />
                   <div>
-                    <h3 className="font-semibold text-foreground">Insurance Accepted</h3>
+                    <h3 className="font-semibold text-foreground">Insurance Not Accepted</h3>
                     <p className="text-muted-foreground text-sm">
-                      We accept most major insurance plans including Blue Cross, Aetna, 
-                      Cigna, and United Healthcare.
+                      We do not accept insurance at this time. Payment is due at the time of service.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-healing-green mt-0.5" />
                   <div>
-                    <h3 className="font-semibold text-foreground">Flexible Payment</h3>
+                    <h3 className="font-semibold text-foreground">Cash Payment</h3>
                     <p className="text-muted-foreground text-sm">
-                      Payment plans available. We accept cash, credit cards, and HSA/FSA accounts.
+                      Payment plans available. We accept cash.
                     </p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-3">
                   <CheckCircle className="w-5 h-5 text-healing-green mt-0.5" />
                   <div>
-                    <h3 className="font-semibold text-foreground">Sliding Scale</h3>
+                    <h3 className="font-semibold text-foreground">Mpesa Payment</h3>
                     <p className="text-muted-foreground text-sm">
-                      Limited sliding scale spots available for those experiencing financial hardship.
+                      Mpesa is accepted.
                     </p>
                   </div>
                 </div>
