@@ -146,18 +146,18 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: "Emily R.",
-                text: "Dr. Johnson helped me work through my anxiety in ways I never thought possible. Her compassionate approach made all the difference.",
+                name: "Client 32.",
+                text: "Anne helped me find peace after years of emotional burnout. Her sessions felt like a soft place to land in the middle of my chaos.",
                 rating: 5
               },
               {
-                name: "Michael T.",
-                text: "The couples therapy sessions saved our marriage. We learned to communicate better and understand each other's perspectives.",
+                name: "Client 27.",
+                text: "I came in broken after a difficult breakup. Anne gently walked with me through the pain. Now, I’m learning to love and trust myself again.",
                 rating: 5
               },
               {
-                name: "Lisa M.",
-                text: "Finding this practice was a turning point in my life. The supportive environment and professional care exceeded my expectations.",
+                name: "Couple, married 8 years",
+                text: "My husband and I were barely talking. Anne helped us listen to each other with empathy instead of blame. We’re slowly rebuilding what we thought was lost.",
                 rating: 5
               }
             ].map((testimonial, index) => (
