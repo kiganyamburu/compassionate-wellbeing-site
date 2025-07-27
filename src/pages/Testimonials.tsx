@@ -8,7 +8,7 @@ const Testimonials = () => {
     {
       name: "Emily Rodriguez",
       service: "Individual Therapy",
-      text: "Dr. Johnson helped me work through my anxiety in ways I never thought possible. Her compassionate approach and evidence-based techniques made all the difference. I finally feel like myself again.",
+      text: "Dr. Johnson helped me work through my anxiety in ways I never thought possible. Her compassionate approach and evidence-based techniques made all the difference. I finally feel like myself again////.",
       rating: 5,
       location: "San Francisco, CA"
     },
