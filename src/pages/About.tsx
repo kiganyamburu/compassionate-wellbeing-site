@@ -96,25 +96,25 @@ const About = () => {
               {
                 icon: BookOpen,
                 title: "Licensed Clinical Psychologist",
-                description: "California Board of Psychology, License #12345",
+                description: "Kenyatta University, License #12345",
                 color: "text-healing-green",
               },
               {
                 icon: Heart,
                 title: "Certified CBT Therapist",
-                description: "Beck Institute for Cognitive Behavior Therapy",
+                description: "Kenyatta University, Certification #12345",
                 color: "text-primary",
               },
               {
                 icon: Users,
-                title: "EMDR Certified",
-                description: "EMDR International Association",
+                title: "Stress Management Specialist",
+                description: "Kenyatta University, Certification",
                 color: "text-healing-blue",
               },
               {
                 icon: Shield,
                 title: "Trauma-Informed Care",
-                description: "National Council for Mental Wellbeing",
+                description: "Kenyatta University, Certification",
                 color: "text-healing-green",
               },
               {

@@ -14,7 +14,7 @@ const Location = () => {
               Visit Our Practice
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-slide-in-left">
-              Located in the heart of San Francisco, our practice offers a peaceful, 
+              Located in the heart of Nairobi, our practice offers a peaceful, 
               accessible environment for your therapy sessions.
             </p>
           </div>
@@ -52,7 +52,7 @@ const Location = () => {
                       <p className="text-muted-foreground">
                         123 Wellness Street<br />
                         Suite 200<br />
-                        San Francisco, CA 94105
+                        Nairobi 94105
                       </p>
                     </div>
                   </div>
@@ -60,7 +60,7 @@ const Location = () => {
                     <Phone className="w-5 h-5 text-healing-blue" />
                     <div>
                       <h3 className="font-semibold text-foreground">Phone</h3>
-                      <p className="text-muted-foreground">(555) 123-4567</p>
+                      <p className="text-muted-foreground">+254 792427737</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
@@ -274,7 +274,7 @@ const Location = () => {
               <Link to="/contact">Book Appointment</Link>
             </Button>
             <Button variant="outline" size="lg" className="bg-white/10 border-white/30 text-white hover:bg-white/20">
-              Call (555) 123-4567
+              Call +254 792427737
             </Button>
           </div>
         </div>
