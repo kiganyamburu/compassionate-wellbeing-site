@@ -59,7 +59,7 @@ const Testimonials = () => {
       service: "Anxiety Treatment",
       text: "I’m a survivor of trauma, and Anne’s gentle, trauma-informed approach helped me feel safe in my own body again. She gave me back my voice",
       rating: 5,
-      location: "Sunnyvale, CA"
+      location: "Nairobi, Kenya"
     },
     {
       name: "Client, 29",
