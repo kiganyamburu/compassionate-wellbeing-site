@@ -6,67 +6,67 @@ import { Star, Quote, Heart, ArrowRight } from "lucide-react";
 const Testimonials = () => {
   const testimonials = [
     {
-      name: "Emily Rodriguez",
+      name: "Client, 40",
       service: "Individual Therapy",
-      text: "Dr. Johnson helped me work through my anxiety in ways I never thought possible. Her compassionate approach and evidence-based techniques made all the difference. I finally feel like myself again////.",
+      text: "Grief was swallowing me whole. I didn’t think therapy could help, but Anne made space for my tears and taught me how to carry the love without drowning in the pain.",
       rating: 5,
-      location: "San Francisco, CA"
+      location: "Mombasa, Kenya"
     },
     {
-      name: "Michael Thompson",
+      name: "Couple, 37 & 39",
       service: "Couples Therapy",
-      text: "The couples therapy sessions literally saved our marriage. We learned to communicate better and understand each other's perspectives. Dr. Johnson guided us through our darkest moments with patience and wisdom.",
+      text: "We came to Anne on the verge of divorce. She didn’t take sides  she held space for both of us. We learned how to fight fair, communicate, and reconnect.",
       rating: 5,
-      location: "Oakland, CA"
+      location: "Nairobi, Kenya"
     },
     {
-      name: "Lisa Martinez",
+      name: "Client, 15",
       service: "Family Counseling",
       text: "Finding this practice was a turning point for our family. The supportive environment and professional care exceeded our expectations. Our teenage daughter finally started opening up and our family dynamics improved dramatically.",
       rating: 5,
-      location: "Berkeley, CA"
+      location: "Nairobi, Kenya"
     },
     {
-      name: "David Chen",
+      name: "Client,24",
       service: "Trauma Therapy",
-      text: "After years of struggling with PTSD, Dr. Johnson's EMDR therapy helped me process my trauma in a safe environment. I'm now able to live my life without being constantly triggered by past events.",
+      text: "I struggled with anxiety and constant overthinking. Anne taught me grounding tools and how to speak to myself with kindness. I finally feel like I can breathe again.",
       rating: 5,
-      location: "San Jose, CA"
+      location: "Nairobi, Kenya"
     },
     {
-      name: "Sarah Williams",
+      name: "Client, 30",
       service: "CBT Therapy",
-      text: "The cognitive behavioral therapy approach was exactly what I needed. Dr. Johnson taught me practical tools to manage my depression and negative thinking patterns. I feel empowered and hopeful about the future.",
+      text: "The cognitive behavioral therapy approach was exactly what I needed. Anne taught me practical tools to manage my depression and negative thinking patterns. I feel empowered and hopeful about the future.",
       rating: 5,
-      location: "Palo Alto, CA"
+      location: "Nairobi, Kenya"
     },
     {
-      name: "Robert Johnson",
+      name: "Client, 45",
       service: "Individual Therapy",
-      text: "I was skeptical about therapy at first, but Dr. Johnson's warm and non-judgmental approach put me at ease. She helped me work through my career transition stress and find clarity in my life goals.",
+      text: "Betrayal from the person I trusted most  that is my sister and my husband was the worst I had ever experienced.Anne helped me to overcome the pain and the brokenness I had with a lot of warmth and compassion.She gave me a hand in my journey of healing without any form judgement making me feel at home and free.",
       rating: 5,
-      location: "Mountain View, CA"
+      location: "Nairobi, Kenya"
     },
     {
-      name: "Jennifer Kim",
+      name: "Client, 32",
       service: "Couples Therapy",
-      text: "Dr. Johnson provided us with practical tools to improve our communication and resolve conflicts. Her insights into relationship dynamics were invaluable. We're now stronger than ever.",
+      text: "My teenage daughter was withdrawn and struggling emotionally. Anne connected with her so well and helped her open up. We’ve seen a huge change at home.",
       rating: 5,
-      location: "Fremont, CA"
+      location: "Nairobi, Kenya"
     },
     {
-      name: "Mark Davis",
+      name: "Client, 34",
       service: "Anxiety Treatment",
-      text: "My social anxiety was debilitating, but through Dr. Johnson's guidance, I learned coping strategies that actually work. I can now attend social events and speak up at work without overwhelming fear.",
+      text: "I’m a survivor of trauma, and Anne’s gentle, trauma-informed approach helped me feel safe in my own body again. She gave me back my voice",
       rating: 5,
       location: "Sunnyvale, CA"
     },
     {
-      name: "Amanda Foster",
+      name: "Client, 29",
       service: "Grief Counseling",
-      text: "Losing my mother was the hardest thing I've ever experienced. Dr. Johnson helped me navigate my grief with compassion and understanding. She gave me permission to feel and heal at my own pace.",
+      text: "Sometimes I’d walk into session not knowing what I needed  but Anne always helped me untangle my emotions and make sense of what was really going on.",
       rating: 5,
-      location: "Redwood City, CA"
+      location: "Nairobi, Kenya"
     }
   ];
 
