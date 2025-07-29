@@ -125,8 +125,8 @@ const Home = () => {
             <div className="relative">
               <img
                 src={therapistImage}
-                alt="Dr. Sarah Johnson"
-                className="rounded-lg shadow-hover w-full h-auto"
+                alt="Anne Mburu - Counseling Psychologist"
+                className="rounded-lg shadow-hover w-auto h-[80vh] object-cover"
               />
             </div>
           </div>

@@ -168,7 +168,7 @@ const Contact = () => {
                       <SelectContent>
                         <SelectItem value="email">Email</SelectItem>
                         <SelectItem value="phone">Phone</SelectItem>
-                        <SelectItem value="text">Text Message</SelectItem>
+                        <SelectItem value="text">WhatsApp Message</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
