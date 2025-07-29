@@ -12,7 +12,7 @@ const Footer = () => {
               <div className="w-8 h-8 bg-white/20 rounded-lg flex items-center justify-center">
                 <Heart className="w-5 h-5" />
               </div>
-              <span className="text-xl font-bold">Healing Mind</span>
+              <span className="text-xl font-bold">Serene Trails Counseling Center</span>
             </div>
             <p className="text-white/80 text-sm">
               Professional therapy services to help you heal, grow, and thrive. 
@@ -87,7 +87,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-8 border-t border-white/20 text-center text-sm text-white/80">
-          <p>&copy; 2024 Healing Mind. All rights reserved.</p>
+          <p>&copy; 2024 Serene Trails Counseling Center. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -28,7 +28,7 @@ const Navigation = () => {
             <div className="w-8 h-8 bg-gradient-to-r from-healing-blue to-healing-green rounded-lg flex items-center justify-center group-hover:scale-110 transition-all duration-300">
               <Heart className="w-5 h-5 text-white" />
             </div>
-            <span className="text-xl font-bold text-foreground">Healing Mind</span>
+            <span className="text-xl font-bold text-foreground">Serene Trails Counseling Center</span>
           </Link>
 
           {/* Desktop Navigation */}

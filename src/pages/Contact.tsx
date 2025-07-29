@@ -4,9 +4,24 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Phone, Mail, MapPin, Clock, CheckCircle, Calendar } from "lucide-react";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  CheckCircle,
+  Calendar,
+  Link,
+} from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
+import { FaWhatsapp} from "react-icons/fa"
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -16,7 +31,7 @@ const Contact = () => {
     service: "",
     message: "",
     preferredContact: "",
-    urgency: ""
+    urgency: "",
   });
   const { toast } = useToast();
 
@@ -34,12 +49,12 @@ const Contact = () => {
       service: "",
       message: "",
       preferredContact: "",
-      urgency: ""
+      urgency: "",
     });
   };
 
   const handleChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+    setFormData((prev) => ({ ...prev, [field]: value }));
   };
 
   return (
@@ -52,8 +67,8 @@ const Contact = () => {
               Get in Touch
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-slide-in-left">
-              Ready to begin your journey to better mental health? Contact us today 
-              to schedule your consultation or ask any questions.
+              Ready to begin your journey to better mental health? Contact us
+              today to schedule your consultation or ask any questions.
             </p>
           </div>
         </div>
@@ -66,7 +81,9 @@ const Contact = () => {
             {/* Contact Form */}
             <Card className="border-0 shadow-card">
               <CardHeader>
-                <CardTitle className="text-2xl text-foreground">Schedule a Consultation</CardTitle>
+                <CardTitle className="text-2xl text-foreground">
+                  Schedule a Consultation
+                </CardTitle>
               </CardHeader>
               <CardContent>
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -108,25 +125,43 @@ const Contact = () => {
 
                   <div>
                     <Label htmlFor="service">Service Interested In *</Label>
-                    <Select onValueChange={(value) => handleChange("service", value)}>
+                    <Select
+                      onValueChange={(value) => handleChange("service", value)}
+                    >
                       <SelectTrigger className="mt-1">
                         <SelectValue placeholder="Select a service" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="individual">Individual Therapy</SelectItem>
+                        <SelectItem value="individual">
+                          Individual Therapy
+                        </SelectItem>
                         <SelectItem value="couples">Couples Therapy</SelectItem>
-                        <SelectItem value="family">Family Counseling</SelectItem>
-                        <SelectItem value="cbt">Cognitive Behavioral Therapy</SelectItem>
+                        <SelectItem value="family">
+                          Family Counseling
+                        </SelectItem>
+                        <SelectItem value="cbt">
+                          Cognitive Behavioral Therapy
+                        </SelectItem>
                         <SelectItem value="trauma">Trauma Therapy</SelectItem>
-                        <SelectItem value="crisis">Crisis Intervention</SelectItem>
-                        <SelectItem value="consultation">Initial Consultation</SelectItem>
+                        <SelectItem value="crisis">
+                          Crisis Intervention
+                        </SelectItem>
+                        <SelectItem value="consultation">
+                          Initial Consultation
+                        </SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
 
                   <div>
-                    <Label htmlFor="preferredContact">Preferred Contact Method</Label>
-                    <Select onValueChange={(value) => handleChange("preferredContact", value)}>
+                    <Label htmlFor="preferredContact">
+                      Preferred Contact Method
+                    </Label>
+                    <Select
+                      onValueChange={(value) =>
+                        handleChange("preferredContact", value)
+                      }
+                    >
                       <SelectTrigger className="mt-1">
                         <SelectValue placeholder="Select contact method" />
                       </SelectTrigger>
@@ -140,15 +175,25 @@ const Contact = () => {
 
                   <div>
                     <Label htmlFor="urgency">Urgency Level</Label>
-                    <Select onValueChange={(value) => handleChange("urgency", value)}>
+                    <Select
+                      onValueChange={(value) => handleChange("urgency", value)}
+                    >
                       <SelectTrigger className="mt-1">
                         <SelectValue placeholder="Select urgency" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="routine">Routine (1-2 weeks)</SelectItem>
-                        <SelectItem value="soon">Soon (within 1 week)</SelectItem>
-                        <SelectItem value="urgent">Urgent (2-3 days)</SelectItem>
-                        <SelectItem value="crisis">Crisis (same day)</SelectItem>
+                        <SelectItem value="routine">
+                          Routine (1-2 weeks)
+                        </SelectItem>
+                        <SelectItem value="soon">
+                          Soon (within 1 week)
+                        </SelectItem>
+                        <SelectItem value="urgent">
+                          Urgent (2-3 days)
+                        </SelectItem>
+                        <SelectItem value="crisis">
+                          Crisis (same day)
+                        </SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
@@ -166,7 +211,12 @@ const Contact = () => {
                     />
                   </div>
 
-                  <Button type="submit" variant="healing" size="lg" className="w-full">
+                  <Button
+                    type="submit"
+                    variant="healing"
+                    size="lg"
+                    className="w-full"
+                  >
                     Send Message
                   </Button>
                 </form>
@@ -177,7 +227,9 @@ const Contact = () => {
             <div className="space-y-8">
               <Card className="border-0 shadow-card">
                 <CardHeader>
-                  <CardTitle className="text-xl text-foreground">Contact Information</CardTitle>
+                  <CardTitle className="text-xl text-foreground">
+                    Contact Information
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-6">
                   <div className="flex items-center space-x-3">
@@ -191,7 +243,9 @@ const Contact = () => {
                     <Mail className="w-5 h-5 text-healing-blue" />
                     <div>
                       <h3 className="font-semibold text-foreground">Email</h3>
-                      <p className="text-muted-foreground">mburuanne19@gmail.com</p>
+                      <p className="text-muted-foreground">
+                        mburuanne19@gmail.com
+                      </p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
@@ -209,20 +263,26 @@ const Contact = () => {
 
               <Card className="border-0 shadow-card">
                 <CardHeader>
-                  <CardTitle className="text-xl text-foreground">Office Hours</CardTitle>
+                  <CardTitle className="text-xl text-foreground">
+                    Office Hours
+                  </CardTitle>
                 </CardHeader>
                 <CardContent className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <Clock className="w-5 h-5 text-healing-green" />
                     <div>
-                      <h3 className="font-semibold text-foreground">Monday - Friday</h3>
+                      <h3 className="font-semibold text-foreground">
+                        Monday - Friday
+                      </h3>
                       <p className="text-muted-foreground">9:00 AM - 6:00 PM</p>
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
                     <Clock className="w-5 h-5 text-healing-green" />
                     <div>
-                      <h3 className="font-semibold text-foreground">Saturday</h3>
+                      <h3 className="font-semibold text-foreground">
+                        Saturday
+                      </h3>
                       <p className="text-muted-foreground">9:00 AM - 2:00 PM</p>
                     </div>
                   </div>
@@ -238,16 +298,22 @@ const Contact = () => {
 
               <Card className="border-0 shadow-card">
                 <CardHeader>
-                  <CardTitle className="text-xl text-foreground">Emergency Support</CardTitle>
+                  <CardTitle className="text-xl text-foreground">
+                    Emergency Support
+                  </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground mb-4">
-                    If you're experiencing a mental health crisis, please reach out immediately:
+                    If you're experiencing a mental health crisis, please reach
+                    out immediately:
                   </p>
                   <ul className="space-y-2 text-sm">
                     <li className="flex items-center space-x-2">
                       <CheckCircle className="w-4 h-4 text-healing-green" />
-                      <span>Crisis Hotline: +254 739 935 333  (Suicide & Crisis Lifeline)</span>
+                      <span>
+                        Crisis Hotline: +254 739 935 333 (Suicide & Crisis
+                        Lifeline)
+                      </span>
                     </li>
                     <li className="flex items-center space-x-2">
                       <CheckCircle className="w-4 h-4 text-healing-green" />
@@ -255,7 +321,7 @@ const Contact = () => {
                     </li>
                     <li className="flex items-center space-x-2">
                       <CheckCircle className="w-4 h-4 text-healing-green" />
-                      <span>Text Crisis Line: Text HOME to  741741</span>
+                      <span>Text Crisis Line: Text HOME to 741741</span>
                     </li>
                   </ul>
                 </CardContent>
@@ -281,32 +347,40 @@ const Contact = () => {
             {[
               {
                 question: "How do I book a session?",
-                answer: "Booking a session is simple. You can reach out to me directly via email or WhatsApp, or use the Book a Session button on this site to schedule a convenient time. I offer both in-person and virtual sessions."
+                answer:
+                  "Booking a session is simple. You can reach out to me directly via email or WhatsApp, or use the Book a Session button on this site to schedule a convenient time. I offer both in-person and virtual sessions.",
               },
               {
                 question: "How long is each session?",
-                answer: "Each therapy session lasts approximately 50 minutes. For couples, families, or corporate sessions, extended time may be arranged based on your needs."
+                answer:
+                  "Each therapy session lasts approximately 50 minutes. For couples, families, or corporate sessions, extended time may be arranged based on your needs.",
               },
               {
                 question: "What is the cost per session?",
-                answer: "Session fees vary depending on the type of service (individual, couple, family, or organizational). Please get in touch for the current rate card. I strive to keep my services accessible and may offer sliding scale options in certain cases."
+                answer:
+                  "Session fees vary depending on the type of service (individual, couple, family, or organizational). Please get in touch for the current rate card. I strive to keep my services accessible and may offer sliding scale options in certain cases.",
               },
               {
                 question: "Do you offer virtual therapy?",
-                answer: "Yes, I offer secure and confidential online therapy sessions via Zoom or Google Meet for clients within Kenya and abroad. This provides flexibility and comfort from your own space."
+                answer:
+                  "Yes, I offer secure and confidential online therapy sessions via Zoom or Google Meet for clients within Kenya and abroad. This provides flexibility and comfort from your own space.",
               },
               {
                 question: "Is counseling confidential?",
-                answer: "Absolutely. Everything shared in session is treated with strict confidentiality, in line with professional ethical standards. Exceptions apply only in cases where there is a risk of harm to yourself or others, as guided by law and ethical guidelines."
+                answer:
+                  "Absolutely. Everything shared in session is treated with strict confidentiality, in line with professional ethical standards. Exceptions apply only in cases where there is a risk of harm to yourself or others, as guided by law and ethical guidelines.",
               },
               {
                 question: "What if I’m not sure therapy is for me?",
-                answer: "That’s completely okay — many people feel that way at first. I offer a free 15-minute discovery call where we can talk about your concerns and see if therapy is the right fit for you. There’s no pressure, just support."
-              }
+                answer:
+                  "That’s completely okay — many people feel that way at first. I offer a free 15-minute discovery call where we can talk about your concerns and see if therapy is the right fit for you. There’s no pressure, just support.",
+              },
             ].map((faq, index) => (
               <Card key={index} className="border-0 shadow-card">
                 <CardContent className="p-6">
-                  <h3 className="font-semibold text-foreground mb-3">{faq.question}</h3>
+                  <h3 className="font-semibold text-foreground mb-3">
+                    {faq.question}
+                  </h3>
                   <p className="text-muted-foreground">{faq.answer}</p>
                 </CardContent>
               </Card>
@@ -321,12 +395,13 @@ const Contact = () => {
           <Calendar className="w-16 h-16 mx-auto mb-6" />
           <h2 className="text-4xl font-bold mb-6">Take the First Step Today</h2>
           <p className="text-xl mb-8 text-white/90">
-            Your mental health journey starts with a single conversation. 
-            Reach out now to schedule your consultation.
+            Your mental health journey starts with a single conversation. Reach
+            out now to schedule your consultation.
           </p>
-          <Button variant="calm" size="lg">
-            Call +254 792427737
-          </Button>
+          <a href="https://wa.me/254792427737">
+            <FaWhatsapp className="w-6 h-6 inline-block mr-2" />
+            Chat with me on WhatsApp
+          </a>
         </div>
       </section>
     </div>

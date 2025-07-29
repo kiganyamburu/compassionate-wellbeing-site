@@ -48,7 +48,7 @@ const Location = () => {
                   <div className="flex items-start space-x-3">
                     <MapPin className="w-5 h-5 text-healing-blue mt-1" />
                     <div>
-                      <h3 className="font-semibold text-foreground">Healing Mind Therapy</h3>
+                      <h3 className="font-semibold text-foreground">Serene Trails Counseling Center</h3>
                       <p className="text-muted-foreground">
                         123 Wellness Street<br />
                         Suite 200<br />
