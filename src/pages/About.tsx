@@ -90,7 +90,7 @@ const About = () => {
               {
                 icon: Award,
                 title: "Degree in Clinical Psychology",
-                description: "Kenyatta University, 2008",
+                description: "Kenyatta University, 2016",
                 color: "text-healing-blue",
               },
               {
