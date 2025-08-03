@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -21,41 +21,36 @@ import {
   Link,
 } from "lucide-react";
 import { useToast } from "@/hooks/use-toast";
-import { FaWhatsapp} from "react-icons/fa"
+import { FaWhatsapp } from "react-icons/fa";
+import { useForm, ValidationError } from "@formspree/react";
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    service: "",
-    message: "",
-    preferredContact: "",
-    urgency: "",
-  });
+  const [state, handleSubmit] = useForm("xovllanp");
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-    toast({
-      title: "Message Sent Successfully!",
-      description: "We'll get back to you within 24 hours.",
-    });
-    setFormData({
-      name: "",
-      email: "",
-      phone: "",
-      service: "",
-      message: "",
-      preferredContact: "",
-      urgency: "",
-    });
-  };
-
-  const handleChange = (field: string, value: string) => {
-    setFormData((prev) => ({ ...prev, [field]: value }));
-  };
+  if (state.succeeded) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-background">
+        <Card className="max-w-md mx-auto shadow-lg">
+          <CardContent className="text-center">
+            <h2 className="text-2xl font-bold text-foreground mb-4">
+              Thank You!
+            </h2>
+            <p className="text-muted-foreground mb-6">
+              Your message has been sent successfully. I will get back to you
+              shortly.
+            </p>
+            <Button
+              variant="healing"
+              onClick={() => window.location.reload()}
+            >
+              Go Back
+            </Button>
+          </CardContent>
+        </Card>
+      </div>
+    )
+  }
 
   return (
     <div className="min-h-screen bg-background">
@@ -91,23 +86,29 @@ const Contact = () => {
                     <div>
                       <Label htmlFor="name">Full Name *</Label>
                       <Input
-                        id="name"
+                        name="name"
                         type="text"
-                        value={formData.name}
-                        onChange={(e) => handleChange("name", e.target.value)}
                         required
                         className="mt-1"
+                      />
+                      <ValidationError 
+                        prefix="Name" 
+                        field="name"
+                        errors={state.errors}
                       />
                     </div>
                     <div>
                       <Label htmlFor="email">Email *</Label>
                       <Input
-                        id="email"
+                        name="email"
                         type="email"
-                        value={formData.email}
-                        onChange={(e) => handleChange("email", e.target.value)}
                         required
                         className="mt-1"
+                      />
+                      <ValidationError 
+                        prefix="Email" 
+                        field="email"
+                        errors={state.errors}
                       />
                     </div>
                   </div>
@@ -115,18 +116,20 @@ const Contact = () => {
                   <div>
                     <Label htmlFor="phone">Phone Number</Label>
                     <Input
-                      id="phone"
+                      name="phone"
                       type="tel"
-                      value={formData.phone}
-                      onChange={(e) => handleChange("phone", e.target.value)}
                       className="mt-1"
                     />
+                      <ValidationError 
+                        prefix="Phone" 
+                        field="phone"
+                        errors={state.errors}
+                      />
                   </div>
 
                   <div>
                     <Label htmlFor="service">Service Interested In *</Label>
                     <Select
-                      onValueChange={(value) => handleChange("service", value)}
                     >
                       <SelectTrigger className="mt-1">
                         <SelectValue placeholder="Select a service" />
@@ -151,6 +154,11 @@ const Contact = () => {
                         </SelectItem>
                       </SelectContent>
                     </Select>
+                      <ValidationError 
+                        prefix="Service" 
+                        field="service"
+                        errors={state.errors}
+                      />
                   </div>
 
                   <div>
@@ -158,9 +166,6 @@ const Contact = () => {
                       Preferred Contact Method
                     </Label>
                     <Select
-                      onValueChange={(value) =>
-                        handleChange("preferredContact", value)
-                      }
                     >
                       <SelectTrigger className="mt-1">
                         <SelectValue placeholder="Select contact method" />
@@ -171,12 +176,16 @@ const Contact = () => {
                         <SelectItem value="text">WhatsApp Message</SelectItem>
                       </SelectContent>
                     </Select>
+                      <ValidationError 
+                        prefix="Preferred Contact" 
+                        field="preferredContact"
+                        errors={state.errors}
+                      />
                   </div>
 
                   <div>
                     <Label htmlFor="urgency">Urgency Level</Label>
                     <Select
-                      onValueChange={(value) => handleChange("urgency", value)}
                     >
                       <SelectTrigger className="mt-1">
                         <SelectValue placeholder="Select urgency" />
@@ -196,19 +205,27 @@ const Contact = () => {
                         </SelectItem>
                       </SelectContent>
                     </Select>
+                      <ValidationError 
+                        prefix="Urgency" 
+                        field="urgency"
+                        errors={state.errors}
+                      />
                   </div>
 
                   <div>
                     <Label htmlFor="message">Message *</Label>
                     <Textarea
-                      id="message"
-                      value={formData.message}
-                      onChange={(e) => handleChange("message", e.target.value)}
+                      name="message"
                       rows={4}
                       required
                       className="mt-1"
                       placeholder="Tell us about your concerns, goals, or any questions you have..."
                     />
+                      <ValidationError 
+                        prefix="Message" 
+                        field="message"
+                        errors={state.errors}
+                      />
                   </div>
 
                   <Button
@@ -216,6 +233,7 @@ const Contact = () => {
                     variant="healing"
                     size="lg"
                     className="w-full"
+                     disabled={state.submitting}
                   >
                     Send Message
                   </Button>
