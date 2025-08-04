@@ -40,16 +40,13 @@ const Contact = () => {
               Your message has been sent successfully. I will get back to you
               shortly.
             </p>
-            <Button
-              variant="healing"
-              onClick={() => window.location.reload()}
-            >
-              Go Back
+            <Button variant="healing" onClick={() => window.location.reload()}>
+              P Go Back
             </Button>
           </CardContent>
         </Card>
       </div>
-    )
+    );
   }
 
   return (
@@ -91,8 +88,8 @@ const Contact = () => {
                         required
                         className="mt-1"
                       />
-                      <ValidationError 
-                        prefix="Name" 
+                      <ValidationError
+                        prefix="Name"
                         field="name"
                         errors={state.errors}
                       />
@@ -105,8 +102,8 @@ const Contact = () => {
                         required
                         className="mt-1"
                       />
-                      <ValidationError 
-                        prefix="Email" 
+                      <ValidationError
+                        prefix="Email"
                         field="email"
                         errors={state.errors}
                       />
@@ -115,22 +112,17 @@ const Contact = () => {
 
                   <div>
                     <Label htmlFor="phone">Phone Number</Label>
-                    <Input
-                      name="phone"
-                      type="tel"
-                      className="mt-1"
+                    <Input name="phone" type="tel" className="mt-1" />
+                    <ValidationError
+                      prefix="Phone"
+                      field="phone"
+                      errors={state.errors}
                     />
-                      <ValidationError 
-                        prefix="Phone" 
-                        field="phone"
-                        errors={state.errors}
-                      />
                   </div>
 
                   <div>
                     <Label htmlFor="service">Service Interested In *</Label>
-                    <Select
-                    >
+                    <Select>
                       <SelectTrigger className="mt-1">
                         <SelectValue placeholder="Select a service" />
                       </SelectTrigger>
@@ -154,19 +146,18 @@ const Contact = () => {
                         </SelectItem>
                       </SelectContent>
                     </Select>
-                      <ValidationError 
-                        prefix="Service" 
-                        field="service"
-                        errors={state.errors}
-                      />
+                    <ValidationError
+                      prefix="Service"
+                      field="service"
+                      errors={state.errors}
+                    />
                   </div>
 
                   <div>
                     <Label htmlFor="preferredContact">
                       Preferred Contact Method
                     </Label>
-                    <Select
-                    >
+                    <Select>
                       <SelectTrigger className="mt-1">
                         <SelectValue placeholder="Select contact method" />
                       </SelectTrigger>
@@ -176,17 +167,16 @@ const Contact = () => {
                         <SelectItem value="text">WhatsApp Message</SelectItem>
                       </SelectContent>
                     </Select>
-                      <ValidationError 
-                        prefix="Preferred Contact" 
-                        field="preferredContact"
-                        errors={state.errors}
-                      />
+                    <ValidationError
+                      prefix="Preferred Contact"
+                      field="preferredContact"
+                      errors={state.errors}
+                    />
                   </div>
 
                   <div>
                     <Label htmlFor="urgency">Urgency Level</Label>
-                    <Select
-                    >
+                    <Select>
                       <SelectTrigger className="mt-1">
                         <SelectValue placeholder="Select urgency" />
                       </SelectTrigger>
@@ -205,11 +195,11 @@ const Contact = () => {
                         </SelectItem>
                       </SelectContent>
                     </Select>
-                      <ValidationError 
-                        prefix="Urgency" 
-                        field="urgency"
-                        errors={state.errors}
-                      />
+                    <ValidationError
+                      prefix="Urgency"
+                      field="urgency"
+                      errors={state.errors}
+                    />
                   </div>
 
                   <div>
@@ -221,11 +211,11 @@ const Contact = () => {
                       className="mt-1"
                       placeholder="Tell us about your concerns, goals, or any questions you have..."
                     />
-                      <ValidationError 
-                        prefix="Message" 
-                        field="message"
-                        errors={state.errors}
-                      />
+                    <ValidationError
+                      prefix="Message"
+                      field="message"
+                      errors={state.errors}
+                    />
                   </div>
 
                   <Button
@@ -233,7 +223,7 @@ const Contact = () => {
                     variant="healing"
                     size="lg"
                     className="w-full"
-                     disabled={state.submitting}
+                    disabled={state.submitting}
                   >
                     Send Message
                   </Button>
