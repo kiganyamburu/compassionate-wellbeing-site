@@ -10,7 +10,7 @@ A modern, responsive therapy practice website built with React, TypeScript, and 
 ## 🌟 Features
 
 - **Modern Design**: Clean, professional interface with healing-focused color palette
-- **Responsive Layout**: Optimized for desktop, tablet, and mobile devices  
+- **Responsive Layout**: Optimized for desktop, tablet, and mobile devices
 - **Service Showcase**: Detailed information about therapy services offered
 - **About Section**: Professional background and credentials display
 - **Contact Integration**: Easy-to-use contact forms with Formspree integration
@@ -215,7 +215,7 @@ VITE_FORMSPREE_ENDPOINT=your_formspree_endpoint
 ## 🔍 Browser Support
 
 - Chrome/Chromium (latest 2 versions)
-- Firefox (latest 2 versions)  
+- Firefox (latest 2 versions)
 - Safari (latest 2 versions)
 - Edge (latest 2 versions)
 
