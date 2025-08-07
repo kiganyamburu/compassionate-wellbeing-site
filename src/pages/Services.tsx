@@ -121,8 +121,8 @@ const Services = () => {
                     <span className="font-medium">{service.duration}</span>
                   </div>
                   <div className="flex justify-between items-center text-sm">
-                    <span className="text-muted-foreground">Price:</span>
-                    <span className="font-medium text-healing-blue">{service.price}</span>
+                    {/* <span className="text-muted-foreground">Price:</span>
+                    <span className="font-medium text-healing-blue">{service.price}</span> */}
                   </div>
                   <ul className="space-y-2">
                     {service.features.map((feature, featureIndex) => (
