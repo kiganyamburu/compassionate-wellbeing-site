@@ -176,7 +176,6 @@ Replace images in `src/assets/` with your own professional photos:
 - **TypeScript Support**: Full type safety and IntelliSense
 - **ESLint Configuration**: Modern ESLint flat config with React hooks support
 - **Path Aliases**: Convenient `@/` imports for src directory
-- **Component Tagging**: Development-time component identification with lovable-tagger
 
 ### Performance Optimizations
 
