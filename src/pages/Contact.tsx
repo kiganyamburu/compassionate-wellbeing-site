@@ -248,6 +248,24 @@ const Contact = () => {
                     </div>
                   </div>
                   <div className="flex items-center space-x-3">
+                    <FaWhatsapp className="w-5 h-5 text-healing-blue" />
+                    <div>
+                      <h3 className="font-semibold text-foreground">
+                        WhatsApp
+                      </h3>
+                      <p className="text-muted-foreground">
+                        <a
+                          href="https://wa.me/254792427737"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:text-foreground"
+                        >
+                          Message on WhatsApp
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="flex items-center space-x-3">
                     <Mail className="w-5 h-5 text-healing-blue" />
                     <div>
                       <h3 className="font-semibold text-foreground">Email</h3>
