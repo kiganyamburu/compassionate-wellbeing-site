@@ -59,7 +59,7 @@ const Contact = () => {
               Get in Touch
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto animate-slide-in-left">
-              Ready to begin your journey to better mental health? Contact us
+              Ready to begin your journey to better mental health? Contact me
               today to schedule your consultation or ask any questions.
             </p>
           </div>
